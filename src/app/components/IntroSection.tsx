@@ -9,7 +9,7 @@ const IntroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="mr-32 col-span-8 place-self-center text-center sm:text-left justify-self-start">
           <h1 className="text-white mb-4 text-xl sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
-            <span>力客思提供給您具極致質感的網站設計</span>
+            <span>提供給您具極致質感的網站設計</span>
             <br></br>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-sm mb-6">
