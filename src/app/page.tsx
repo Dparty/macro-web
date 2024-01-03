@@ -6,20 +6,28 @@ import EmailSection from "./components/EmailSection";
 import HeaderSection from "./components/HeaderSection";
 import IntroSection from "./components/IntroSection";
 import ProjectsSection from "./components/ProjectsSection";
+import LogoSection from "./components/LogoSection";
+import { ScrollToTopButton } from "./components/ScrollToTopButton";
+
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+    <>
+      <ScrollToTopButton />
+      <main className="flex min-h-screen flex-col bg-[#121212]">
+        <Navbar />
+        {/* <div className="container mt-24 mx-auto px-12 py-4"> */}
         <HeaderSection />
         <IntroSection />
-        <ProjectsSection/>
+        <ProjectsSection />
+        <LogoSection />
+
         <EmailSection />
-      </div>
-      <Footer />
-    </main>
+        {/* </div> */}
+        <Footer />
+      </main>
+    </>
   );
   // return (
   //   <main className={styles.main}>

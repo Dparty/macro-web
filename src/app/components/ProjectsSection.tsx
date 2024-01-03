@@ -59,30 +59,33 @@ const ProjectsSection = () => {
   const ref = useRef(null);
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        我們最近的作品賞析
-      </h2>
+    <div className="container mt-24 mx-auto px-12 py-4">
 
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project, index) => (
-          <li
-            key={index}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              subTitle={project.subTitle}
-              description={project.description}
-              subDescription={project.subDescription}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </li>
-        ))}
-      </ul>
-    </section>
+      <section id="projects">
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+          我們最近的作品賞析
+        </h2>
+
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {projectsData.map((project, index) => (
+            <li
+              key={index}
+            >
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                subTitle={project.subTitle}
+                description={project.description}
+                subDescription={project.subDescription}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 };
 
