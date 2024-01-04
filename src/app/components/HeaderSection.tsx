@@ -9,7 +9,7 @@ const HeaderSection = () => {
       <section className="flex">
         <div className="grid grid-cols-1 sm:grid-cols-12">
           <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-            <div className="w-[450px] h-[450px] relative">
+            <div className="lg:w-[650px] lg:h-[650px] relative w-[250px] h-[250px]">
               <Image
                 src="/images/bg.png"
                 alt="hero image"
@@ -19,7 +19,7 @@ const HeaderSection = () => {
               />
             </div>
           </div>
-          <div className="ml-32 col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <div className="ml-0 lg:ml-32 col-span-8 place-self-center text-center sm:text-left justify-self-start">
             <h1 className="text-white mb-4 text-2xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
                 致力為您

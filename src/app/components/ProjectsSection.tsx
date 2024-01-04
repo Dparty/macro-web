@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
+import { motion, useInView } from "framer-motion";
+
 
 const projectsData = [
   {
@@ -57,6 +59,12 @@ const projectsData = [
 
 const ProjectsSection = () => {
   const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
   return (
     <div className="container mt-24 mx-auto px-12 py-4">
@@ -68,8 +76,12 @@ const ProjectsSection = () => {
 
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
           {projectsData.map((project, index) => (
-            <li
+            <motion.li
               key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
             >
               <ProjectCard
                 key={project.id}
@@ -81,7 +93,7 @@ const ProjectsSection = () => {
                 gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
               />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </section>
