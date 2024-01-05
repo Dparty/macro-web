@@ -16,7 +16,10 @@
     "postcss": "8.4.27",
     "autoprefixer": "10.4.15",
     "@heroicons/react": "^2.0.18",
-    "framer-motion": "^10.16.1"
+    "framer-motion": "^10.16.1",
+    "react-type-animation": "^3.1.0",
+    "resend": "^1.0.0",
+    "react-animated-numbers": "^0.16.0"
   },
   "devDependencies": {
     "typescript": "^5",

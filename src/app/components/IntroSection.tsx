@@ -9,7 +9,7 @@ const IntroSection = () => {
       <div className="container mt-24 mx-auto px-12 py-4">
 
         <div className="grid grid-cols-1 sm:grid-cols-12">
-          <div className="mr-32 col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <div className="mr-0 lg:mr-32 col-span-8 place-self-center text-center sm:text-left justify-self-start">
             <h1 className="text-white mb-4 text-xl sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
               <span>提供給您具極致質感的網站設計</span>
               <br></br>
@@ -31,11 +31,11 @@ const IntroSection = () => {
             </div>
           </div>
           <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-            <div className="w-[450px] h-[450px] relative">
+            <div className="lg:w-[650px] lg:h-[650px] relative w-[250px] h-[250px]">
               <Image
                 src="/images/bg.png"
                 alt="hero image"
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 width={500}
                 height={500}
               />

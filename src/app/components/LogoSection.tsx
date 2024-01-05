@@ -19,6 +19,7 @@ const LogoSection = () => {
               <Image loading="lazy" src="/images/fortune.png" height={180} width={180} className="max-w-none" alt="Image 2" />
               <Image loading="lazy" src="/images/heshi.png" height={180} width={180} className="max-w-none" alt="Image 3" />
               <Image loading="lazy" src="/images/grantit.jpg" height={180} width={280} className="max-w-none" alt="Image 4" />
+              <Image loading="lazy" src="/images/feie.png" height={180} width={530} className="max-w-none" alt="Image 5" />
 
               {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/80480f8a-69ad-4c30-88ba-f4e7ee08fc51?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" className="max-w-none" alt="Image 2" />
                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/140d376c-13f2-4823-b397-b3de733bf560?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" className="max-w-none" alt="Image 3" />
