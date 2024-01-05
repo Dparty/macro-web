@@ -8,6 +8,7 @@ import IntroSection from "./components/IntroSection";
 import ProjectsSection from "./components/ProjectsSection";
 import LogoSection from "./components/LogoSection";
 import AchievementsSection from "./components/AchievementSection";
+import PlanSection from "./components/PlanSection";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
 
 
@@ -24,6 +25,7 @@ export default function Home() {
         <AchievementsSection />
         <ProjectsSection />
         <LogoSection />
+        <PlanSection />
         <EmailSection />
         {/* </div> */}
         <Footer />
